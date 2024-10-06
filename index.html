@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="brand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="rgb(108, 63, 63)">
+                  CASIO
+                </text>
+              </svg>
+            <div>
+                <ul class="blocks">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="result">
+            <!-- <div id="output"  readonly></div> -->
+            <input readonly id="display" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+
+        </div>
+        <div class="keys">
+            <button onclick="AppendToDisplay('%')">%</button>
+            <button onclick="ClearDisplay()">CE</button>
+            <button onclick="ClearDisplay()">C</button>
+            <button onclick="AppendToDisplay('/')">/</button>
+            <button onclick="AppendToDisplay('7')">7</button>
+            <button onclick="AppendToDisplay('8')">8</button>
+            <button onclick="AppendToDisplay('9')">9</button>
+            <button onclick="AppendToDisplay('*')">x</button>
+            <button onclick="AppendToDisplay('4')">4</button>
+            <button onclick="AppendToDisplay('5')">5</button>
+            <button onclick="AppendToDisplay('6')">6</button>
+            <button onclick="AppendToDisplay('-')">-</button>
+            <button onclick="AppendToDisplay('1')">1</button>
+            <button onclick="AppendToDisplay('2')">2</button>
+            <button onclick="AppendToDisplay('3')">3</button>
+            <button onclick="AppendToDisplay('+')">+</button>
+            <button id="clear">&larr;</button>
+            <button onclick="AppendToDisplay('0')">0</button>
+            <button onclick="AppendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.brand svg {
+    display: inline-block;
+    justify-self: flex-start;
+    align-items: center;
+    width: 162px;
+    margin: 5px -27px 0 -31px;
+}
+
+.brand svg text {
+    display: inline-block;
+}
+
+.blocks {
+    display: flex;
+    list-style: none;
+}
+
+.blocks li {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-color: black;
+    border-right: 1px solid white;
+}
+
+.calculator {
+    width: 400px;
+    background-color: rgb(194, 171, 171);
+    box-shadow: 10px 10px 30px 0 rgba(36, 36, 36);
+    border-radius: 10px;
+    /* border: 2px solid rgb(108, 63, 63); */
+    width: 350px;
+    overflow: hidden;
+    display: block;
+    padding: 15px;
+}
+
+#display {
+    width: 97%;
+    height: 100%;
+    border: hidden;
+    outline: none;
+    background-color: rgb(46 43 47);
+    text-align: end;
+    border-radius: 5px;
+    font-size: 3.4rem;
+    color: white;
+    padding-right: 10px;
+}
+
+#output {
+    width: 100%;
+    display: block;
+    height: 40%;
+    font-size: 2rem;
+    text-align: end;
+    color: white;
+
+}
+
+.result {
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100px;
+    background-color: rgb(46 43 47);
+    margin-bottom: 15px;
+    text-align: end;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    column-gap: 10px;
+
+}
+
+button {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+    background-color: rgb(108, 63, 63);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(93, 43, 43);
+}
+
+button:active {
+    background-color: hsl(0, 33%, 31%);
+}
